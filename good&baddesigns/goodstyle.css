@@ -1,0 +1,82 @@
+html body {
+    background: #white;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  img{
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    opacity: 0.5;
+  }
+  
+  .good{
+    overflow:auto;
+    max-width: 100%;
+    transform: translate(0px,100px);
+    border-color: skyblue;
+    border-style: solid;
+    border-width: 15px;
+  }
+  
+  .bad{
+    overflow:auto;
+    max-width: 100%;
+    /* border-color: red;
+    border-style: solid;
+    border-width: 15px; */
+  }
+  
+  
+  .bad4:{
+  position:center;
+  height:auto;
+  max-width: 100%;
+  
+  }
+  li:hover{
+    /* transform: scale(1.5, 1.5);
+    width:200px;
+    opacity: 0.5;
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    transition: 1s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease; */
+    transform: scale(1.2);
+  }
+  ul{
+    overflow: scroll;
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    width: 200%;
+  }
+  ul li {
+    float: left;
+    width: calc(100% / 6);
+  }
+  ul li a,
+  ul li a img{
+    display: block;
+    line-height: 1;
+    transition: opacity 500ms ease-in-out; 
+  }
+  
+  ul li a img:hover{
+    opacity: 1;
+  }
+  
+  .list_wrapper--good a {
+    background-color: skyblue;
+    display: block;
+  }
+  
+  .list_wrapper--bad a {
+    background-color: red;
+    display: block;
+  }
+  
+  .grow { transition: all .2s ease-in-out; }
+  .grow:hover { transform: scale(1.1); }
