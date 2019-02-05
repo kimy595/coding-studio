@@ -6,10 +6,11 @@
   height: 50px;
   margin: 0 auto;
   
+  
   position: absolute;
   top: 30%;
-  left: 50%;
-  transform: translate(-50%, 10%);
+  left: 42%;
+
      }
          
  .skyblue:hover {
@@ -27,9 +28,9 @@
       margin: 0 auto;
      
       position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 42%;
+
          }
              
      .red:hover {

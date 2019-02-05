@@ -6,10 +6,11 @@ html body {
   
   img{
     height: auto;
-    max-width: 100%;
-    width: 100%;
+    max-width: 90%;
+    width: 90%;
     opacity: 0.5;
   }
+  
   
   .good{
     overflow:auto;
@@ -20,21 +21,7 @@ html body {
     border-width: 15px;
   }
   
-  .bad{
-    overflow:auto;
-    max-width: 100%;
-    /* border-color: red;
-    border-style: solid;
-    border-width: 15px; */
-  }
-  
-  
-  .bad4:{
-  position:center;
-  height:auto;
-  max-width: 100%;
-  
-  }
+ 
   li:hover{
     /* transform: scale(1.5, 1.5);
     width:200px;
