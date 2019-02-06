@@ -1,0 +1,39 @@
+html, body{
+    color: green;
+    font size: 16px;
+}
+
+.border_dotted{
+   border: 2px solid blue;
+}
+
+.border_red {
+   position: absolute;
+   border: 2px solid red;
+
+}
+.border_green{
+    border: 2px solid;
+}
+
+.relative{
+    position: relative;
+}
+.div{
+    display: block;
+}
+
+.absolute{
+position: absolute;
+top:38px;
+
+}
+
+.absolute_window{
+    position: absolute;
+    top: 200%;
+    transition: all 5s 2s ease-in-out;
+}
+.active {
+    background-color: green;
+}
