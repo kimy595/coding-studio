@@ -6,7 +6,7 @@ body {
 .jennieblue{
     width: 4in;
     height: 6in;
-    transform: translate(0px,366px);
+    transform: translate(0px,385px);
 
 }
 .sparkle{
@@ -16,11 +16,11 @@ body {
 }
 
 .jennie2{
-    position: absolute;
+
     width: 4in;
     height: 8in;
     transform: translate(578px,-0px);
-    z-index: -1;
+    /* z-index: -1; */
 }
 .pearl{
     width: 4in;
@@ -38,7 +38,7 @@ body {
 
 .textile{
     display: flex;
-        position: absolute;
+       
         left: 15%;
         top: 50%;
         z-index: -1;
@@ -57,7 +57,7 @@ body {
     grid-template-columns: auto;
     font-family: "Passion One", sans-serif;
     text-align: center;
-    border: 25px solid pink;
+    border: 25px solid rgb(157, 236, 232);
     cursor: pointer;
     -webkit-transition: 0.5s;
 }
@@ -87,7 +87,7 @@ body {
     grid-template-columns: auto;
     font-family: "Passion One", sans-serif;
     text-align: center;
-    border: 25px solid rgb(157, 236, 232);
+    border: 25px solid pink;
     cursor: pointer;
     -webkit-transition: 0.5s;
 }
