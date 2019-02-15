@@ -1,0 +1,27 @@
+@media only screen and (max-width: 915px) {
+
+	.textile {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.card {
+		width: 100%;
+		max-width: 600px;
+		margin-bottom: 20px;
+	}
+
+	.container1{
+		width: 2in;
+		height: 3in;
+		transform: translate(30px,11px);
+	   
+		background-color: white;
+		display: grid;
+		grid-template-columns: auto;
+		font-family: "Passion One", sans-serif;
+		text-align: center;
+		border: 2px solid pink;
+		cursor: pointer;
+		-webkit-transition: 0.5s;
+	}
