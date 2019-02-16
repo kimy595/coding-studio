@@ -3,66 +3,82 @@ body {
     /* rgb(232, 187, 250 */
 }
 
-.jennieblue{
+.jennieblue {
     width: 4in;
     height: 6in;
     transform: translate(0px,385px);
-
+    transition: all .5s ease-in-out;
 }
-.sparkle{
+.jennieblue:hover { 
+    transform: scale(1.1); 
+}
+
+/* .sparkle{
     width: 8in;
     height: 8in;
     z-index: -1;
-}
+} */
 
 .jennie2{
-
     width: 4in;
     height: 8in;
-    transform: translate(578px,-0px);
+    transform: translate(0px,-900px);
+    transition: all .5s ease-in-out;
     /* z-index: -1; */
 }
-.pearl{
+.jennie2:hover { 
+    transform: scale(1.1); 
+    transform: translate(0px,-200px);
+}
+/* .pearl{
     width: 4in;
     height: 4in;
     top: 10%;
-}
+} */
 
 .blue{
-    position: relative;
+    position: fixed;
     width: 8in;
     height: 8in;
-    transform: translate(0px,-576px);
+    transform: translate(0px,-960px);
     z-index: -2;
 }
 
 .textile{
-    display: flex;
-       
+    /* display: flex; */
+    transform: translate(50px,-300px);
         left: 15%;
         top: 50%;
         z-index: -1;
-        width: 25%;
-        height: 55%;
-
+        width: 50%;
+        height: 300%;
 }
+
+/* .pattern{
+    display: flex;
+        left: 15%;
+        top: 50%;
+        z-index: -1;
+        width: 7in;
+        height: 10in;
+} */
 
 .container1{
     width: 10in;
-    height: 10in;
+    height: 30in;
     transform: translate(340px,10px);
 
-    background-color: white;
+    background-color: black;
     display: grid;
     grid-template-columns: auto;
     font-family: "Passion One", sans-serif;
     text-align: center;
-    border: 25px solid rgb(157, 236, 232);
+    border: 16px solid rgb(157, 236, 232);
     cursor: pointer;
     -webkit-transition: 0.5s;
 }
 
-.container2{
+/* .container2{
     width: 10in;
     height: 10in;
     transform: translate(340px,10px);
@@ -91,4 +107,4 @@ body {
     cursor: pointer;
     -webkit-transition: 0.5s;
 }
-
+ */
