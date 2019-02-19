@@ -1,9 +1,78 @@
+
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     /* rgb(232, 187, 250 */
 }
+.container{
+    width:50vh;
+    height: 100vh;
+}
 
-.jennieblue {
+.textile1{
+    position: relative;
+    width: 100%;
+}
+
+.textile2{
+    position: relative;
+}
+
+/* .jennieblue{
+    position: absolute;
+    z-index: 10px;
+    transform: translate(0px,0px);
+transform: translate(0px,385px);
+transition: all .5s ease-in-out;
+} */
+
+div ul{
+    overflow: scroll;
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    width: 300%;
+    margin-left: 30%;
+    text-align: center;
+    display: block;
+    line-height: 1;
+  }
+
+
+  .jennieblue {
+    transform: translate(0px,-385px);
+    transition: all .5s ease-in-out;
+    position: fixed;
+    z-index: 10;
+    top: 60%;
+    left: 9%;
+}
+
+.jennieblue:hover { 
+    transform: scale(1.1); 
+    } 
+
+.jennie4{
+    /* transform: translate(0px,-385px);
+    transition: all .5s ease-in-out; */
+    position: fixed;
+    z-index: 10;
+    top: 40%;
+    left: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .jennieblue {
     width: 4in;
     height: 6in;
     transform: translate(0px,385px);
@@ -11,59 +80,38 @@ body {
 }
 .jennieblue:hover { 
     transform: scale(1.1); 
-}
-
-/* .sparkle{
-    width: 8in;
-    height: 8in;
-    z-index: -1;
 } */
 
-.jennie2{
+/* .jennie2{
     width: 4in;
     height: 8in;
     transform: translate(0px,-900px);
     transition: all .5s ease-in-out;
-    /* z-index: -1; */
-}
-.jennie2:hover { 
+    z-index: -1;
+} */
+/* .jennie2:hover { 
     transform: scale(1.1); 
     transform: translate(0px,-200px);
-}
-/* .pearl{
-    width: 4in;
-    height: 4in;
-    top: 10%;
 } */
-
-.blue{
+/* .blue{
     position: fixed;
     width: 8in;
     height: 8in;
     transform: translate(0px,-960px);
     z-index: -2;
-}
+} */
 
-.textile{
-    /* display: flex; */
+/* .textile{
+    display: flex;
     transform: translate(50px,-300px);
         left: 15%;
         top: 50%;
         z-index: -1;
         width: 50%;
         height: 300%;
-}
-
-/* .pattern{
-    display: flex;
-        left: 15%;
-        top: 50%;
-        z-index: -1;
-        width: 7in;
-        height: 10in;
 } */
 
-.container1{
+/* .container1{
     width: 10in;
     height: 30in;
     transform: translate(340px,10px);
@@ -76,7 +124,7 @@ body {
     border: 16px solid rgb(157, 236, 232);
     cursor: pointer;
     -webkit-transition: 0.5s;
-}
+} */
 
 /* .container2{
     width: 10in;

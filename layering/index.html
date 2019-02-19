@@ -12,25 +12,62 @@
     <link rel="stylesheet" href="mobile.css">
 </head>
 <body>
-     <div class="container1">
+        <div class="container">  
+            <ul class="background">
+                <li class="textile1">
+                  <a href="#">
+                    <img src="../image/background1.jpg" class="background1">
+                  </a>
+                  <a href="#">
+                        <img src="../image/jennieblue.png" class="jennieblue">
+                      </a>
+                </li>
+                <li class="textile2">
+                  <a href="#">
+                        <img src="../image/background2.jpg" class="background2">
+                  </a>
+                  <a href="#">
+                        <img src="../image/jennie4.png" class="jennie4">
+                      </a>
+                </li>
+                <li class="textile3">
+                  <a href="#">
+                        <img src="../image/background3.jpg" class="background3">
+                        </a>
+                </li>
+               
+                </ul>
+              </div> 
+
+
+
+
+     <!-- <div class="container1">
      <img src="../image/jennieblue.png" class="jennieblue">
+     </div> -->
     
-     <img src="../image/glossier.jpg" class="textile">
+     <!-- <img src="../image/glossier.jpg" class="textile">
     <img src="../image/blue.png" class="blue">
     <img src="../image/jennie2.png" class="jennie2">
-    <!-- <img src="../image/pattern.jpg" class="pattern"> -->
-     <!-- <img src="../image/zipper.png" class="zipper"> -->
-    </div>
-     <!-- <div class="container2">two
-        <img src="../image/sparkle.png" class="sparkle">
-        <img src="../image/pearl.png" class="pearl">
-     </div>
-     <div class="container3">three</div>  -->
+    </div> -->
+   
 </body>
-<script type="text/javascript">
+<script>
+var wrap = $("#wrap");
+
+wrap.on("scroll", function(e) {
+    
+  if (this.scrollTop > 147) {
+    wrap.addClass("jennieblue");
+  } else {
+    wrap.removeClass("jennieblue");
+  }
+  
+});</script>
+<!-- <script type="text/javascript">
  $(function(){
         $('.blue').click(function(){
             $('.blue').hide();
         });
-    });</script>
+    });</script> -->
 </html>
