@@ -12,12 +12,38 @@
 <body>
   <div class="container bar">
     <h1 class="cliped1">Textile designing is a creative field that includes any </h1>
+    <!-- <a href="#">
+        <img src="../image/jennieblue.png" class="jennieblue">
+      </a> -->
     <h1 class="cliped2"> kind of fasion industry. Textile </h1>
     <h1 class="cliped3"> designers have to be creative, </h1>
     <h1 class="cliped5">collaborative and aware of constantly</h1>
     <h1 class="cliped4"> changing trends in color and style.</h1>
 </div>
+<!-- <div>
+  <h1 class="cliped3"> designers have to be creative, </h1>
+</div>
+<div>
+  <h1 class="cliped5">collaborative and aware of constantly</h1>
+</div>
+<div>
+  <h1 class="cliped4"> changing trends in color and style.</h1>
+</div> -->
+
 </body>
+
+<script>
+    var wrap = $("#wrap");
+    
+    wrap.on("scroll", function(e) {
+        
+      if (this.scrollTop > 147) {
+        wrap.addClass("container bar");
+      } else {
+        wrap.removeClass("container bar");
+      }
+      
+    });</script>
 <!-- 
 <script>
  $( document ).ready( function() {

@@ -19,13 +19,13 @@ body,html{
 } */
 
 .container{
-  width:80%;
-  height: 100vh;
+  width:90%;
+  height: 800vh;
   margin-left: 10%;
   background-color: black;
   display: grid;
   grid-template-columns: auto;
-  font-family:"futura", sans-serif;
+  font-family:"Akzidenz-Grotesk", sans-serif;
   text-align: left;
   border: 2px solid pink;
   cursor: pointer;
@@ -84,6 +84,15 @@ h4{
   font-size: 30px;
 }
 
+.jennieblue {
+  transform: translate(0px,-385px);
+  transition: all .5s ease-in-out;
+  position: fixed;
+  z-index: 10;
+  top: 60%;
+  left: 9%;
+}
+
 @media screen and (max-width:700px) {
   h3{
     font-size: 50px;
@@ -99,23 +108,26 @@ h4{
   }
 }
 .cliped1{
-background: url(../image/36782537c3e1404ef056309386671900.jpg) no-repeat center center;
-background-size: 1200px;
-background-position-y:46px;
+background: url(../image/background1.jpg) no-repeat center center;
+background-size: cover;
+/* background-position-y:46px; */
+background-attachment: fixed;
 color: #fff;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip:text;}
 
 .cliped2{
-background: url(../image/47241391_346120979550636_4253450871459379761_n.jpg) no-repeat center center;
-background-size: 1200px;
+background: url(../image/background2.jpg) no-repeat center center;
+background-size: cover;
+background-attachment: fixed;
 color: #fff;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip:text;}
 
 .cliped3{
-background: url(../image/5e04d5bc18aa4c8084150c62fcf03a86.jpg) no-repeat center center;
-background-size: 1200px;
+background: url(../image/background3.jpg) no-repeat center center;
+background-size: cover;
+background-attachment: fixed;
 color: #fff;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip:text;}
@@ -123,14 +135,16 @@ color: #fff;
 
 .cliped4{
 background: url(../image/97ed9751e5890001fab52a2c03061502.jpg) no-repeat center center;
-background-size:1200px;
+background-size:cover;
+background-attachment: fixed;
 color: #fff;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip:text;}
 
 .cliped5{
 background: url(../image/97ed9751e5890001fab52a2c03061502.jpg) no-repeat center center;
-background-size:1200px;
+background-size:cover;
+background-attachment: fixed;
 color: #fff;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip:text;}
