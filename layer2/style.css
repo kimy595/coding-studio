@@ -21,7 +21,7 @@ body,html{
 .container{
   width:90%;
   height: 800vh;
-  margin-left: 10%;
+  margin-left: 5%;
   background-color: black;
   display: grid;
   grid-template-columns: auto;
@@ -52,23 +52,7 @@ body,html{
   transition: 0.5s;
 }
 
-  /* background: url(background.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  -webkit-background-clip: text;
-  color: transparent; */
-
-  .bar::before {
-    border-bottom: 3px solid #FFF;
-    border-left: 3px solid #FFF;
-    -webkit-transform-origin: 100% 0%;
-  }
-
-  .bar::after {
-    border-top: 3px solid #FFF;
-    border-right: 3px solid #FFF;
-    -webkit-transform-origin: 0% 100%;
-  }
+ 
 
 
 h3{
@@ -111,9 +95,9 @@ h4{
 .cliped1{
 background: url(../image/background1.jpg) no-repeat center center;
 background-size: cover;
-font-size: 200px;
 /* background-position-y:46px; */
 background-attachment: fixed;
+overflow: hidden;
 color: #fff;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip:text;}
@@ -147,6 +131,8 @@ color: #fff;
 background: url(../image/97ed9751e5890001fab52a2c03061502.jpg) no-repeat center center;
 background-size:cover;
 background-attachment: fixed;
+padding: 20px;
 color: #fff;
+overflow: scroll;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip:text;}

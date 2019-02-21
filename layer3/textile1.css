@@ -1,0 +1,21 @@
+.box {
+    position: absolute;
+    display: block;
+    left: 15%;
+    top: 10%;
+    width: 70%;
+    height: 70%;
+    background-color: blue;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.button1 {
+    width: 30px;
+    height: 39px;
+    background:url("../image/background1.jpg");
+    background-attachment: fixed;
+    position: absolute;
+    display: block;
+
+}
