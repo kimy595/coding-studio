@@ -107,9 +107,11 @@ h4{
     font-size: 10px;
   }
 }
+.cliped1:hover { text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;}
 .cliped1{
 background: url(../image/background1.jpg) no-repeat center center;
 background-size: cover;
+font-size: 200px;
 /* background-position-y:46px; */
 background-attachment: fixed;
 color: #fff;

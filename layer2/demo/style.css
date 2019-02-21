@@ -1,0 +1,11 @@
+.box {
+    position: absolute;
+    display: block;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: blue;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
