@@ -37,9 +37,9 @@ body,html{
     top: 5%;
     width: 45%;
     height: 90%;
-   border-color: blue;
-   border-width: 2px;
-   border: solid;
+   border-color: rgb(241, 115, 204);
+   border-width: 5px;
+   border-style: solid;
     overflow-x: hidden;
     overflow-y: scroll;
     z-index: 2;

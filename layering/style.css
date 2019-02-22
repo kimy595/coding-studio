@@ -17,13 +17,6 @@ body {
     position: relative;
 }
 
-/* .jennieblue{
-    position: absolute;
-    z-index: 10px;
-    transform: translate(0px,0px);
-transform: translate(0px,385px);
-transition: all .5s ease-in-out;
-} */
 
 div ul{
     overflow: scroll;
@@ -38,27 +31,8 @@ div ul{
   }
 
 
-  .jennieblue {
-    transform: translate(0px,-385px);
-    transition: all .5s ease-in-out;
-    position: fixed;
-    z-index: 10;
-    top: 60%;
-    left: 9%;
-}
 
-.jennieblue:hover { 
-    transform: scale(1.1); 
-    } 
 
-.jennie4{
-    /* transform: translate(0px,-385px);
-    transition: all .5s ease-in-out; */
-    position: fixed;
-    z-index: 10;
-    top: 40%;
-    left: 70%;
-}
 
 
 
