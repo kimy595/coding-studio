@@ -1,11 +1,59 @@
+body{
+    background-color: blue;
+}
 .box {
     position: absolute;
     display: block;
-    left: 10%;
-    top: 10%;
-    width: 80%;
-    height: 80%;
-    background-color: blue;
+    left: 30%;
+    top: 5%;
+    width: 40%;
+    height: 90%;
+    background-color: transparent;
+    /* overflow-x: hidden; */
+    overflow-y: scroll;
+}
+
+.box2{
+    position: absolute;
+    display: block;
+    left: 30%;
+    top: 5%;
+    width: 40%;
+    height: 90%;
+   border-color: blue;
+   border-width: 2px;
+   border: solid;
     overflow-x: hidden;
     overflow-y: scroll;
+    z-index: 2;
+}
+
+.p1{
+    position: absolute;
+    /* border: solid; */
+    /* border-color: aqua; */
+    left: 0%;
+    top: 0%;
+    width: 10%; 
+    height: 10%;
+    background-color: #668ccb;
+    z-index: 99;
+}
+.p2{
+    position: absolute;
+    left: 11%;
+    top: 0%;
+    width: 10%; 
+    height: 10%;
+    background-color: white;
+    z-index: 99;
+}
+.p3{
+    position: absolute;
+    left: 22%;
+    top: 0%;
+    width: 10%; 
+    height: 10%;
+    background-color: #3d58a9;
+    z-index: inherit;
 }

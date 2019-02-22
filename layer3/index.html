@@ -7,20 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.0.min.js" ></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
         <div class="box">
-                <a href="textile1.html">
-                        <img src="../image/background1.jpg" class="background1">
-                      </a>
-                      <a href="#">
-                            <img src="../image/background2.jpg" class="background2">
-                          </a>
-                          <a href="#">
-                                <img src="../image/background3.jpg" class="background3">
-                              </a>
-            </div>
+            <a href="#">
+                <img src="../image/background2.jpg" class="background2">
+            </a>
+        </div>         
+   <div class="box2">
+       <span class="p1"></span>
+       <span class="p2"></span>
+       <span class="p3"></span>
+</div>
             
+       
 </body>
+<script type="text/javascript">
+$(function(){
+  $('.p1').click(function(){
+    $('.p1').hide();
+  });
+});</script>
+<script type="text/javascript">
+    $(function(){
+      $('.p2').click(function(){
+        $('.p2').hide();
+      });
+    });</script>
 </html>

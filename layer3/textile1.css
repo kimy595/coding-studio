@@ -1,3 +1,21 @@
+@-webkit-keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fade-in {
+	-webkit-animation: fadeIn .5s ease-in 1 forwards;
+  animation: fadeIn .5s ease-in 1 forwards;
+  opacity: 0;
+}
+
 .box {
     position: absolute;
     display: block;
@@ -9,7 +27,9 @@
     overflow-x: hidden;
     overflow-y: scroll;
 }
-
+.first{
+    
+}
 .button1 {
     width: 30px;
     height: 39px;
@@ -18,4 +38,10 @@
     position: absolute;
     display: block;
 
+}
+
+.background2{
+    position: relative;
+    left: -20%;
+   
 }
