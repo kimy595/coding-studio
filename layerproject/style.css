@@ -20,7 +20,7 @@ body,html{
 
 .container{
   width:90%;
-  height: 800vh;
+  height: 280vh;
   margin-left: 5%;
   background-color: black;
   display: grid;
@@ -51,9 +51,6 @@ body,html{
   -webkit-transform: scale(0);
   transition: 0.5s;
 }
-
- 
-
 
 h3{
   font-size: 50px;
@@ -91,9 +88,9 @@ h4{
     font-size: 10px;
   }
 }
-.cliped1:hover { text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;}
+
 .cliped1{
-background: url(../image/background1.jpg) no-repeat center center;
+background: url(../image/mossaic.jpg) no-repeat center center;
 background-size: cover;
 /* background-position-y:46px; */
 background-attachment: fixed;
