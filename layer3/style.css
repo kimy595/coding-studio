@@ -333,5 +333,104 @@ body,html{
     width: 20%; 
     height: 10%;    
     z-index: inherit;
-    background-color:#00479a;
+    background-color:#5782bb;
+}
+.p25{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20%; 
+    height: 20%;    
+    z-index: inherit;
+    background-color:#a44ca8;
+}
+.p26{
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    width: 15%; 
+    height: 20%;    
+    z-index: inherit;
+    background-color:#008da6;
+}
+.p27{
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    width: 20%; 
+    height: 20%;    
+    z-index: inherit;
+    background-color:#a8adda;
+}
+.p28{
+    position: absolute;
+    left: 0%;
+    top: 70%;
+    width: 10%; 
+    height:13%;    
+    z-index: inherit;
+    background-color:#a8adda;
+}
+.p29{
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    width: 20%; 
+    height:13%;    
+    z-index: inherit;
+    background-color:#00348d;
+}
+.p29-1{
+    position: absolute;
+    left: 30%;
+    top: 70%;
+    width: 20%; 
+    height:13%;    
+    z-index: inherit;
+    background-color:#7e98d2;
+}
+.p30{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    width: 25%; 
+    height:13%;    
+    z-index: inherit;
+    background-color:#002886;
+}
+.p30-1{
+    position: absolute;
+    left: 75%;
+    top: 70%;
+    width: 10%; 
+    height:13%;    
+    z-index: inherit;
+    background-color:#946ac1;
+}
+.p30-2{
+    position: absolute;
+    left: 85%;
+    top: 70%;
+    width: 8%; 
+    height:13%;    
+    z-index: inherit;
+    background-color:#9edad8;
+}
+.p30-3{
+    position: absolute;
+    left: 93%;
+    top: 70%;
+    width: 8%; 
+    height:13%;    
+    z-index: inherit;
+    background-color:#002c91;
+}
+.p31{
+    position: absolute;
+    left: 0%;
+    top: 83%;
+    width: 15%; 
+    height:20%;    
+    z-index: inherit;
+    background-color:#b995ca;
 }
