@@ -26,17 +26,20 @@ body,html{
 
 h1{
   font-size: 260px;
+  text-shadow: 0 0 3px #FF0000;
 }
 
-
-.jennieblue {
+h1:hover{
+  text-shadow: 2px 2px 4px red;
+}
+/* .jennieblue {
   transform: translate(0px,-385px);
   transition: all .5s ease-in-out;
   position: fixed;
   z-index: 10;
   top: 60%;
   left: 9%;
-}
+} */
 
 @media screen and (max-width:700px) {
   h3{
