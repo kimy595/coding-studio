@@ -25,22 +25,34 @@
 //   }
 
 function setup() {
-  createCanvas(720, 400);
+  console.log('--setup--');
+  createCanvas(windowWidth, windowHeight);
+  colors = [color('#feeb79'), color('#101ea1'), color('#f835f8'), color('#232822')];
 }
 
 function draw() {
-  background(102);
+  background('#222222');
 
   push();
   translate(width * 0.2, height * 0.5);
   rotate(frameCount / 200.0);
   polygon(0, 0, 82, 3);
   pop();
+  fill(51);
+  stroke(255);
+  strokeWeight(10);
+
 
   push();
   translate(width * 0.5, height * 0.5);
   rotate(frameCount / 50.0);
   polygon(0, 0, 80, 20);
+  pop();
+
+  push();
+  translate(width * 0.8, height * 0.5);
+  rotate(frameCount / -100.0);
+  polygon(0, 0, 70, 7);
   pop();
 
   push();
