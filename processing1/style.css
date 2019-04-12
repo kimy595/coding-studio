@@ -1,0 +1,15 @@
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+    bottom: 100px; 
+}
+
+p {
+    display: inline-block;
+    position: absolute;
+}

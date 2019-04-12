@@ -89,9 +89,23 @@ class Ball {
       this.y = - squareWidth/2 + this.diameter / 2;
       this.vy *= friction;
     }
-  }  
+  }
+  
 
   display() {
     ellipse(this.x, this.y, this.diameter, this.diameter);
   }
 }
+
+function keyPressed(){
+  if (keyCode === 32) {
+    move2();
+  }
+};
+
+// window.onkeypress = function(event) {
+//   if (event.keyCode == 32) {
+     
+//   }
+// }
+
