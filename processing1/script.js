@@ -1,5 +1,15 @@
 var pressed=false;
 var sides=3;
+var speed = 150;
+var num;
+var count = document.getElementById("count");
+
+var r1 = 255;
+var g1 = 204;
+var b1 = 0;
+var r2 = 51;
+var g2 = 0;
+var b2 = 0;
 
 
 function setup() {
@@ -7,16 +17,6 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background('#222222');
 }
-
-var r1 = 255;
-var g1 = 204;
-var b1 = 0;
-
-var r2 = 51;
-var g2 = 0;
-var b2 = 0;
-
-var speed = 150;
 
 function draw() {
   background(r1, g1, b1);
@@ -27,17 +27,7 @@ function draw() {
   stroke(255); // stroke color
   strokeWeight(10);
   polygon(0, 0, 300, sides);
-
-  // fill(10,10,200); // filling color
-  // stroke(255); // stroke color
-  // strokeWeight(10);
-  // circle(30*sides,30*sides,20); //draw the ball
-  // pop();
-  
 }
-
-var num;
-var count = document.getElementById("count");
 
 function keyPressed(){
   event.preventDefault();
@@ -75,13 +65,6 @@ function keyPressed(){
   num = sides;
   count.innerHTML = "Sides = " + num;
 }
-
-
-
-function getRandomColor() {
-  return colors[int(random(0,colors,length))];
-}
-
 
 function polygon(x, y, radius, npoints) {
   let angle = TWO_PI / npoints;
