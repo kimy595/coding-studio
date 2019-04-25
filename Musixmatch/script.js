@@ -1,9 +1,14 @@
 
-(function (){
+var trackname = "Don't Panic"
+var lyricsvar = document.querySelector('.music_genre_name');
+//(function (){
     const APIKEY='169f137f5fc6e376405ff0ec9b92f7ff';
 
-    fetch(
-        `http://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=15953433&apikey=169f137f5fc6e376405ff0ec9b92f7ff`, {
+    const proxy = 'http://cors-anywhere.herokuapp.com/';
+    const api = `${proxy}http://api.musixmatch.com/ws/1.1/track.search?q_track=${trackname}&apikey=169f137f5fc6e376405ff0ec9b92f7ff`;
+
+    /*fetch(
+        ``, {
             mode: 'no-cors',
             headers: {
                 'Access-Control-Allow-Origin': '*'
@@ -14,7 +19,16 @@
         })
         .catch(error => console.error(error))
 
-}());
+}(*/
+    fetch(api)
+    .then(response => {
+        return response.json();
+        console.log(lyricsvar);
+     })
+    .then(data => {
+     console.log(data);});
+
+//));
 
 
     //   $("document").ready(function(){
