@@ -1,50 +1,44 @@
-
-var trackname = "Don't Panic"
+var trackform = document.querySelector('#trackform');
 var lyricsvar = document.querySelector('.music_genre_name');
+var artist = document.querySelector('.artist');
+var trackname = document.querySelector('#trackname');
+var dataWrapper = document.querySelector('.music_genre_name');
 //(function (){
     const APIKEY='169f137f5fc6e376405ff0ec9b92f7ff';
 
     const proxy = 'http://cors-anywhere.herokuapp.com/';
-    const api = `${proxy}http://api.musixmatch.com/ws/1.1/track.search?q_track=${trackname}&apikey=169f137f5fc6e376405ff0ec9b92f7ff`;
+    
+    const getTrackdata = function(e){
+        const api = `${proxy}http://api.musixmatch.com/ws/1.1/track.search?q_track=${trackname.value}&s_artist_rating=desc&apikey=169f137f5fc6e376405ff0ec9b92f7ff`;
+        e.preventDefault();
+        fetch(api)
+        .then(response => {
+            return response.json();
+            console.log(lyricsvar);
+        })
+        .then(data => {
+            console.log(data.message.body.track_list);
 
-    /*fetch(
-        ``, {
-            mode: 'no-cors',
-            headers: {
-                'Access-Control-Allow-Origin': '*'
+            let formattedData = '';
+            let formattedDataartist = '';
+
+            if (!data.message) {
+                formattedData += `genre not found!`;
+            } else {
+                // Logging the data gives us a picture of what's available!
+                // console.log(data);
+                formattedData += `${data.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name}`;
+                formattedDataartist += `${data.message.body.track_list[0].track.artist_name}`;
+            
             }
+            
+            lyricsvar.innerHTML = "Artist: " +formattedDataartist + "          "+ "Genre: " + formattedData;
+
+            artist.innerHTML = "Artist: " +formattedDataartist ;
+
         })
-        .then(function(response){
-            console.log(response);
-        })
-        .catch(error => console.error(error))
-
-}(*/
-    fetch(api)
-    .then(response => {
-        return response.json();
-        console.log(lyricsvar);
-     })
-    .then(data => {
-     console.log(data);});
-
-//));
-
-
-    //   $("document").ready(function(){
-    //     $.ajax({
-    //       url: "http://tracking.musixmatch.com/t1.0/AMa6hJCIEzn1v8RuOP",
-    //       success: function(data) {
-    //         console.log(data);
-    //         handleData(data)
-    //       }
-    //     });
-
-    //     var q_lyrics = $("#lyrics")
-
-    //     function handleData(data){
-    //       $("#lyrics").html("The song is" + data.main.temp)
-        
-    //     }
-      
-    // });
+    };
+     if (trackform) {
+        trackform.addEventListener('submit', getTrackdata);
+     }
+     
