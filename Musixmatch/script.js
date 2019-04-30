@@ -32,7 +32,7 @@ var dataWrapper = document.querySelector('.music_genre_name');
             
             }
             
-            lyricsvar.innerHTML = "Artist: " +formattedDataartist + "          "+ "Genre: " + formattedData;
+            lyricsvar.innerHTML = "          "+ "Genre: " + formattedData;
 
             artist.innerHTML = "Artist: " +formattedDataartist ;
 

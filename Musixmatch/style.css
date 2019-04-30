@@ -1,4 +1,38 @@
 body {
     color: black;
-    background-color: aqua;
+    background-color: white;
+}
+
+/* #trackname{
+position: absolute;
+left: 50%;
+}
+
+#form__submit{
+left: 60%;
+position: absolute;
+} */
+h1{
+position: absolute;
+left: 40%;
+top: 30%;
+font-size: 50px;
+}
+#trackform{
+position: absolute;
+left: 45%;
+top: 50%;
+size: 30px;
+}
+
+.music_genre_name{
+position: absolute;
+left: 45%;
+top: 70%;
+}
+
+.artist{
+    position: absolute;
+    left: 45%;
+    top: 80%;
 }
