@@ -28,11 +28,12 @@ size: 30px;
 .music_genre_name{
 position: absolute;
 left: 45%;
-top: 70%;
+top: 60%;
 }
 
 .artist{
     position: absolute;
     left: 45%;
-    top: 80%;
+    top: 65%;
 }
+
