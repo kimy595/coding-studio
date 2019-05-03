@@ -19,9 +19,16 @@ var dataWrapper = document.querySelector('.music_genre_name');
         })
         .then(data => {
             console.log(data.message.body.track_list);
+            let data_tracklist = data.message.body.track_list;
 
             let formattedData = '';
             let formattedDataartist = '';
+
+            if(data_tracklist[0].track.primary_genres.music_genre_list.length === 0){
+                //lyricsvar.innerHTML = "sorry";
+                alert("Sorry");
+                return;
+            }
 
             if (!data.message) {
                 formattedData += `genre not found!`;
@@ -31,9 +38,6 @@ var dataWrapper = document.querySelector('.music_genre_name');
                 formattedData += `${data.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name}`;
                 formattedDataartist += `${data.message.body.track_list[0].track.artist_name}`;
             }
-            // if(data.track.primary_genres.music_genre_list.length[0].){
-            //     lyricsvar.innerHTML = "sorry";
-            // }
 
             lyricsvar.innerHTML = "          "+ "Genre: " + formattedData;
 
