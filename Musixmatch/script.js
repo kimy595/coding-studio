@@ -7,7 +7,7 @@ var dataWrapper = document.querySelector('.music_genre_name');
 //(function (){
     const APIKEY='169f137f5fc6e376405ff0ec9b92f7ff';
 
-    const proxy = 'http://cors-anywhere.herokuapp.com/';
+    const proxy = 'https://cors-anywhere.herokuapp.com/';
     
     const getTrackdata = function(e){
         const api = `${proxy}https://api.musixmatch.com/ws/1.1/track.search?q_track=${trackname.value}&s_track_rating=desc&s_artist_rating=desc&apikey=169f137f5fc6e376405ff0ec9b92f7ff`;
