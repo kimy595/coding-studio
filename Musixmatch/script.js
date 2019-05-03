@@ -29,6 +29,12 @@ var dataWrapper = document.querySelector('.music_genre_name');
                 alert("Sorry! No genre found");
                 return;
             }
+            if(data_tracklist[0].track.primary_genres.music_genre_list.length === 0){
+                formattedData += `genre not found!`;
+            
+                artist.innerHTML = "Artist: " +formattedDataartist ;
+            }
+            
 
             if (!data.message) {
                 formattedData += `genre not found!`;
