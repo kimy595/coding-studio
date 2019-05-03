@@ -15,7 +15,7 @@ var dataWrapper = document.querySelector('.music_genre_name');
         fetch(api)
         .then(response => {
             return response.json();
-            console.log(lyricsvar);
+            // console.log(lyricsvar);
         })
         .then(data => {
             console.log(data.message.body.track_list);
@@ -23,31 +23,30 @@ var dataWrapper = document.querySelector('.music_genre_name');
 
             let formattedData = '';
             let formattedDataartist = '';
-
-            if(data_tracklist[0].track.primary_genres.music_genre_list.length === 0){
-                //lyricsvar.innerHTML = "sorry";
-                alert("Sorry! No genre found");
-                return;
-            }
-            if(data_tracklist[0].track.primary_genres.music_genre_list.length === 0){
-                formattedData += `genre not found!`;
-            
-                artist.innerHTML = "Artist: " +formattedDataartist ;
-            }
-            
+        
+         
 
             if (!data.message) {
-                formattedData += `genre not found!`;
+                formattedData = `no tracks found!`;
             } else {
                 // Logging the data gives us a picture of what's available!
                 // console.log(data);
-                formattedData += `${data.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name}`;
-                formattedDataartist += `${data.message.body.track_list[0].track.artist_name}`;
+
+                if(data_tracklist[0].track.primary_genres.music_genre_list.length === 0){
+                    //lyricsvar.innerHTML = "sorry";
+                    // alert("Sorry! No genre found");
+                    formattedData = `genre not found!`;
+                    // return;
+                } else {
+                    formattedData = `${data.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name}`;
+                }
+
+                formattedDataartist = `${data.message.body.track_list[0].track.artist_name}`;
             }
 
             lyricsvar.innerHTML = "          "+ "Genre: " + formattedData;
 
-            artist.innerHTML = "Artist: " +formattedDataartist ;
+            artist.innerHTML = "Artist: " + formattedDataartist ;
 
 
         })
