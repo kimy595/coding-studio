@@ -10,7 +10,7 @@ var dataWrapper = document.querySelector('.music_genre_name');
     const proxy = 'http://cors-anywhere.herokuapp.com/';
     
     const getTrackdata = function(e){
-        const api = `${proxy}http://api.musixmatch.com/ws/1.1/track.search?q_track=${trackname.value}&s_track_rating=desc&s_artist_rating=desc&apikey=169f137f5fc6e376405ff0ec9b92f7ff`;
+        const api = `${proxy}https://api.musixmatch.com/ws/1.1/track.search?q_track=${trackname.value}&s_track_rating=desc&s_artist_rating=desc&apikey=169f137f5fc6e376405ff0ec9b92f7ff`;
         e.preventDefault();
         fetch(api)
         .then(response => {
@@ -26,7 +26,7 @@ var dataWrapper = document.querySelector('.music_genre_name');
 
             if(data_tracklist[0].track.primary_genres.music_genre_list.length === 0){
                 //lyricsvar.innerHTML = "sorry";
-                alert("Sorry");
+                alert("Sorry! No genre found");
                 return;
             }
 

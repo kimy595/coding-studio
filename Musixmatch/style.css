@@ -1,39 +1,55 @@
 body {
     color: black;
     background-color: white;
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: column wrap;
 }
 
-/* #trackname{
-position: absolute;
-left: 50%;
-}
-
-#form__submit{
-left: 60%;
-position: absolute;
-} */
 h1{
-position: absolute;
-left: 40%;
-top: 30%;
+font-family: Arial, Helvetica, sans-serif;
+
+
 font-size: 50px;
-}
-#trackform{
-position: absolute;
-left: 45%;
-top: 50%;
-size: 30px;
+background-image: linear-gradient(to right,  #C835CC 0%, #E88A38 15%, #D5D773 40%, #97E47D 65%, #8ADDDC 80%, #0C2B65 100%);   -webkit-background-clip: text;
+  color: transparent;
 }
 
 .music_genre_name{
-position: absolute;
-left: 45%;
-top: 60%;
+
+
 }
 
 .artist{
-    position: absolute;
-    left: 45%;
-    top: 65%;
+    
+  
+}
+.pure-form{
+   /* transform: translate(50px,40px); */
+
+   width: auto;
 }
 
+#trackname{
+
+  border: 2px solid pink;
+  width: 400px;
+  height: 50px;
+  
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #C835CC 0%, #E88A38 15%, #D5D773 40%, #97E47D 65%, #8ADDDC 80%, #0C2B65 100%);
+  /* border-image: linear-gradient(rgb(200,53,204), rgb(232,138,56),rgb(213,215,115),rgb(151,228,125),rgb(138,221,220),rgb(12,43,101)) 1; */
+  border-image-slice: 1;
+ 
+}
+
+#form__submit{
+    
+}
+
+.search{
+ 
+   
+
+}
