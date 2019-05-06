@@ -35,7 +35,8 @@ var dataWrapper = document.querySelector('.music_genre_name');
                 if(data_tracklist[0].track.primary_genres.music_genre_list.length === 0){
                     //lyricsvar.innerHTML = "sorry";
                     // alert("Sorry! No genre found");
-                    formattedData = `genre not found!`;
+                    formattedData = `Sorry! Genre not found`;
+                    // document.getElementsByClassName("music_genre_name").style.backgroundColor = '#FF6C60';
                     // return;
                 } else {
                     formattedData = `${data.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name}`;

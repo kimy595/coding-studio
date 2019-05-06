@@ -29,15 +29,15 @@ transform: translate(0,80px);
 }
 .pure-form{
    width: auto;
-   transform: translate(100px,-30px);
+   transform: translate(10px,-40px);
 }
 
 #trackname{
 
-  border: 2px solid pink;
+  border: 6px solid pink;
   width: 800px;
-  height: 50px;
-  
+  height: 60px;
+font-size: 20px;
   border: 5px solid transparent;
   border-image: linear-gradient(to bottom right, #C835CC 0%, #E88A38 15%, #D5D773 40%, #97E47D 65%, #8ADDDC 80%, #0C2B65 100%);
   /* border-image: linear-gradient(rgb(200,53,204), rgb(232,138,56),rgb(213,215,115),rgb(151,228,125),rgb(138,221,220),rgb(12,43,101)) 1; */
@@ -46,11 +46,45 @@ transform: translate(0,80px);
 }
 
 #form__submit{
+  width: auto;
+  position: relative;
+  left: 35%;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  /* transform: translate(120px,0px); */
   
+}
+#form__submit:hover{
+  background-color: rgb(230, 179, 243); 
+  color: white;
+
 }
 
 .search{
- 
-   
-
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  width: auto;
+  position: relative;
+  left: 38%;
+  /* transform: translate(200px,0px); */
 }
+.search:hover{
+  background-color: rgb(143, 229, 225); 
+  color: white;
+}
+.music_genre_name{
+  
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+  /* transform:translate(10px,100px); */
+}
+
+
+.artist{
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+}
+
+
