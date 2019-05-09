@@ -36,16 +36,17 @@ var dataWrapper = document.querySelector('.music_genre_name');
                     //lyricsvar.innerHTML = "sorry";
                     // alert("Sorry! No genre found");
                     formattedData = `Sorry! Genre not found`;
+                    lyricsvar.innerHTML =  '<span>' + formattedData + '</span>';
                     // document.getElementsByClassName("music_genre_name").style.backgroundColor = '#FF6C60';
                     // return;
+                    
                 } else {
                     formattedData = `${data.message.body.track_list[0].track.primary_genres.music_genre_list[0].music_genre.music_genre_name}`;
+                    lyricsvar.innerHTML = "          "+ "Genre: " + formattedData;
                 }
 
                 formattedDataartist = `${data.message.body.track_list[0].track.artist_name}`;
             }
-
-            lyricsvar.innerHTML = "          "+ "Genre: " + formattedData;
 
             artist.innerHTML = "Artist: " + formattedDataartist ;
 
